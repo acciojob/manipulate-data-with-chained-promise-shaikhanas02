@@ -16,7 +16,7 @@ function manipulateData1(arr) {
     
     .then((arr) => {
       const outputElement = document.getElementById("output");
-      outputElement.innerText = arr.toString();
+      outputElement.innerHTML = arr+" " ;
     });
 }
 
@@ -37,7 +37,8 @@ function manipulateData2(arr) {
     
     .then((arr) => {
       const outputElement = document.getElementById("output");
-      outputElement.innerText = arr.toString();
+      outputElement.innerHTML += arr.toString();
     });
 }
-manipulateData([1, 2, 3, 4]);
+manipulateData1([1, 2, 3, 4]);
+manipulateData2([1, 2, 3, 4]);
